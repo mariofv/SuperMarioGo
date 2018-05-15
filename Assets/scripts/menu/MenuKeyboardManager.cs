@@ -15,12 +15,12 @@ public class MenuKeyboardManager : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
-            menuManager.rotateLeft();
+            menuManager.previousButton();
         }
 
         else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
-            menuManager.rotateRight();
+            menuManager.nextButton();
         }
     }
 }
