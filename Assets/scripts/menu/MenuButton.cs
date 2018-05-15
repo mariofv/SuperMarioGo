@@ -5,18 +5,14 @@ using UnityEngine;
 public class MenuButton : MonoBehaviour {
 
     public float rotationSpeed = 10f;
-
     public GameObject model;
-    public Transform leftPoint;
-    public Transform rightPoint;
+    public string buttonName;
 
     private GameObject buttonModel;
 
     // Use this for initialization
     void Start () {
         buttonModel = Instantiate(model, gameObject.transform);
-
-
     }
 	
 	// Update is called once per frame

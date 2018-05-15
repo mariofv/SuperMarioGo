@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4371734025018162}
-  - component: {fileID: 114816789379456506}
+  - component: {fileID: 114392926229704082}
   m_Layer: 0
   m_Name: MenuButton
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114816789379456506
+--- !u!114 &114392926229704082
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -52,6 +52,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 10
-  model: {fileID: 100002, guid: 11c1bc3e1bacd584f99474a0c1aa4df1, type: 3}
-  leftPoint: {fileID: 0}
-  rightPoint: {fileID: 0}
+  model: {fileID: 0}
+  buttonName: 
