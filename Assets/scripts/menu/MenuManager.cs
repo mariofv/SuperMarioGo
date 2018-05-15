@@ -7,6 +7,7 @@ public class MenuManager : MonoBehaviour {
 
     public GameObject menuButtons;
     public Text buttonText;
+    public AudioSource menuMusic;
     public float speed;
 
     private List<Quaternion> rotations;
@@ -24,10 +25,11 @@ public class MenuManager : MonoBehaviour {
         rotations.Add(Quaternion.AngleAxis(270, Vector3.up));
 
         currentRotation = 0;
-        rotate();
-	}
+        rotating = false;
+        setTextName();
+    }
 
-    
+
     void Update()
     {
         if (rotating)
@@ -64,6 +66,12 @@ public class MenuManager : MonoBehaviour {
     private void rotate()
     {
         rotating = true;
+        setTextName();
+        menuMusic.Play();
+    }
+
+    private void setTextName()
+    {
         string buttonName = menuButtons.GetComponentsInChildren<MenuButton>()[currentRotation].buttonName;
         buttonText.text = buttonName;
     }
