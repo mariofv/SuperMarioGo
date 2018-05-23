@@ -5,15 +5,30 @@ using UnityEngine.UI;
 
 
 public class MenuManager : MonoBehaviour {
-
-    public MenuButtonRulette menuButtonRoulette;
-    public MenuText menuText;
-    public AudioSource menuMusic;
    
+
+    public static MenuManager instance = null;
+
+    //Awake is always called before any Start functions
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public Menu currentMenu;
+    public Menu previousMenu;
 
     // Use this for initialization
     void Start () {
-        menuText.setText(menuButtonRoulette.getCurrentButtonName());
     }
 
 
@@ -22,26 +37,37 @@ public class MenuManager : MonoBehaviour {
       
     }
 
-    public void previousButton()
+    public void leftKeyPressed()
     {
-        if (!menuText.swaping())
-        { 
-            menuButtonRoulette.rotateLeft();
-            menuText.swapText(menuButtonRoulette.getCurrentButtonName());
-            menuMusic.Play();
-        }
+        currentMenu.leftKeyPressed();
     }
 
-    public void nextButton()
+    public void rightKeyPressed()
     {
-        if (!menuText.swaping())
-        {
-            menuButtonRoulette.rotateRight();
-            menuText.swapText(menuButtonRoulette.getCurrentButtonName());
-            menuMusic.Play();
-        }
+        currentMenu.rightKeyPressed();
     }
-    
+
+    public void enterKeyPressed()
+    {
+        currentMenu.enterKeyPressed();
+    }
+
+    public void escapeKeyPressed()
+    {
+        currentMenu.closeMenu();
+        currentMenu = previousMenu;
+        previousMenu = null;
+        currentMenu.openMenu();
+    }
+
+    public void openSubMenu(Menu subMenu)
+    {
+        currentMenu.closeMenu();
+        previousMenu = currentMenu;
+        currentMenu = subMenu;
+        currentMenu.openMenu();
+    }
+
 
 
 }

@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class MenuKeyboardManager : MonoBehaviour {
 
-    public MenuManager menuManager;
+    private MenuManager menuManager;
 
 	// Use this for initialization
 	void Start () {
-		
+        menuManager = GetComponent<MenuManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
-            menuManager.previousButton();
+            menuManager.leftKeyPressed();
         }
 
         else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
-            menuManager.nextButton();
+            menuManager.rightKeyPressed();
+        }
+        else if (Input.GetKeyUp(KeyCode.Return))
+        {
+            menuManager.enterKeyPressed();
+        }
+        else if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            menuManager.escapeKeyPressed();
         }
     }
 }

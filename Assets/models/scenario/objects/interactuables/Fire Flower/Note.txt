@@ -1,0 +1,5 @@
+The "spec" and "refract" textures are for the Ice Power-Up.
+
+One is for the highlights, the other for the light distortion behind them.
+
+Use them with the Mario/Luigi model (or any model).
