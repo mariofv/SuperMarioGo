@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class MenuManager : MonoBehaviour {
-   
 
     public static MenuManager instance = null;
-
+    
     //Awake is always called before any Start functions
     void Awake()
     {
@@ -21,7 +19,6 @@ public class MenuManager : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
     }
 
     public Menu currentMenu;
@@ -54,6 +51,10 @@ public class MenuManager : MonoBehaviour {
 
     public void escapeKeyPressed()
     {
+        if (previousMenu == null)
+        {
+            return;
+        }
         currentMenu.closeMenu();
         currentMenu = previousMenu;
         previousMenu = null;
@@ -67,7 +68,5 @@ public class MenuManager : MonoBehaviour {
         currentMenu = subMenu;
         currentMenu.openMenu();
     }
-
-
 
 }

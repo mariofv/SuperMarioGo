@@ -5,9 +5,10 @@ using UnityEngine;
 public abstract class Menu : MonoBehaviour {
 
     public AudioClip arrowKeyPressedEffect;
+    public AudioClip enterKeyPressedEffect;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

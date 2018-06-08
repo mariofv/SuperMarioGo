@@ -74,24 +74,5 @@ public class MenuButtonRulette : MonoBehaviour {
     {
         return GetComponentsInChildren<MenuMainButton>()[currentRotation].subMenu;
     }
-
-    public void focusCurrentButton()
-    {
-        MenuMainButton[] mainMenuButtons = GetComponentsInChildren<MenuMainButton>();
-        for (int i = 0; i < rotations.Count; ++i)
-        {
-            
-            mainMenuButtons[i].GetComponentInChildren<Animator>().SetBool("away", true);
-            
-        }
-    }
-
-    public void disfocusCurrentButton()
-    {
-        MenuMainButton[] mainMenuButtons = GetComponentsInChildren<MenuMainButton>();
-        for (int i = 0; i < rotations.Count; ++i)
-        {
-            mainMenuButtons[i].GetComponentInChildren<Animator>().SetBool("away", false);
-        }
-    }
+    
 }

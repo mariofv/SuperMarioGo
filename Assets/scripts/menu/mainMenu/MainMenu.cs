@@ -7,6 +7,11 @@ public class MainMenu : Menu {
 
     private MenuButtonRulette menuButtonRoulette;
     private MainMenuText menuText;
+    public GameObject menuButtonRouletteObject;
+    public GameObject backgroundLogo;
+    public GameObject enterInfo;
+    public GameObject arrowInfo;
+
 
     // Use this for initialization
     void Start () {
@@ -44,22 +49,27 @@ public class MainMenu : Menu {
     {
         if (ready())
         {
+            SoundManager.instance.playMusicEffect(enterKeyPressedEffect);
             MenuManager.instance.openSubMenu(menuButtonRoulette.getCurrentButtonSubMenu());
         }
     }
 
     public override void closeMenu()
     {
-        GetComponent<Animator>().SetBool("focus", true);
-        menuButtonRoulette.focusCurrentButton();
+        menuButtonRouletteObject.SetActive(false);
         menuText.disable();
+        backgroundLogo.SetActive(false);
+        enterInfo.SetActive(false);
+        arrowInfo.SetActive(false);
     }
 
     public override void openMenu()
     {
-        GetComponent<Animator>().SetBool("focus", false);
-        menuButtonRoulette.disfocusCurrentButton();
+        menuButtonRouletteObject.SetActive(true);
         menuText.enable();
+        backgroundLogo.SetActive(true);
+        enterInfo.SetActive(true);
+        arrowInfo.SetActive(true);
     }
 
     private bool ready()

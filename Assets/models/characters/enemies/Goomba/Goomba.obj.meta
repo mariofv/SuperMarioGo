@@ -8,17 +8,11 @@ ModelImporter:
     400000: default
     400002: //RootNode
     2100000: KuriboMat00
-    2100002: defaultMat
     2300000: default
     3300000: default
     4300000: default
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: defaultMat
-    second: {fileID: 2100000, guid: bc2f32a2f4f425942af491e32e2471f1, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -49,7 +43,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.05
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

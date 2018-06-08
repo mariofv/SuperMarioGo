@@ -38,9 +38,19 @@ public class Slider : MonoBehaviour {
         }
     }
 
+    public bool canMoveRight()
+    {
+        return currentPos + 1 != positions.Count;
+    }
+
+    public bool canMoveLeft()
+    {
+        return currentPos - 1 != -1;
+    }
+
     public void moveRight()
     {
-        if (currentPos + 1 != positions.Count)
+        if (canMoveRight())
         {
             lastPos = currentPos++;
             moving = true;
@@ -49,7 +59,7 @@ public class Slider : MonoBehaviour {
 
     public void moveLeft()
     {
-        if (currentPos - 1 != -1)
+        if (canMoveLeft())
         {
             lastPos = currentPos--;
             moving = true;

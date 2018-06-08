@@ -1,0 +1,16 @@
+# Created by Every File Explorer
+
+newmtl mt_Castle01
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+d 1
+map_Kd Tex/Castle01.png
+
+newmtl mt_sShadow01
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+d 1
+map_Kd Tex/W1_dummy.png
+

@@ -14,9 +14,9 @@ public class StarChip : MonoBehaviour {
 
         Random.InitState((int)System.DateTime.Now.Ticks);
         int currentTexture = Random.Range(0, 2);
-        gameObject.GetComponent<Renderer>().material.EnableKeyword("_SPECGLOSSMAP");
+        gameObject.GetComponent<Renderer>().material.EnableKeyword("_MainTex");
 
-        gameObject.GetComponent<Renderer>().material.SetTexture("_SpecGlossMap",textures[currentTexture]);
+        gameObject.GetComponent<Renderer>().material.SetTexture("_MainTex", textures[currentTexture]);
 
     }
 

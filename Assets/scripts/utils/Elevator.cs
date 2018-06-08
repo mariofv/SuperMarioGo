@@ -16,7 +16,6 @@ public class Elevator : MonoBehaviour {
 	void Start () {
         ascending = false;
         descending = false;
-
         iniPos = new Vector3(0, initY, 0);
         goalPos = new Vector3(0, goalY, 0);
 
