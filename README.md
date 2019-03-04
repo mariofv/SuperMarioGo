@@ -1,6 +1,6 @@
 # Super Mario GO ![MarioGif](https://github.com/mariofv/SuperMarioGo/blob/master/img/Mario.gif)
 
-This videogame based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Croft_Go) but with the Super Mario Theme. It was implemented using unity and 3D models during the Videogames subject of the Bachelor's Degree in Computer Science of the [Universitat Politècnica de Catalunya](https://www.upc.edu/ca) - [Facultat d'informàtica de Barcelona](https://www.fib.upc.edu/).
+This videogame is based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Croft_Go) with the Super Mario Theme. It was implemented using Unity during the Videogames subject of the Bachelor's Degree in Computer Science of the [Universitat Politècnica de Catalunya](https://www.upc.edu/ca) - [Facultat d'informàtica de Barcelona](https://www.fib.upc.edu/).
 
 
 ![](https://github.com/mariofv/SuperMarioGo/blob/master/img/level.PNG)
@@ -8,12 +8,12 @@ This videogame based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Croft
 
 
 ## Features & funcionalities
-- **3 different levels:** You can select a level created by us based in the diferent worlds of the original SuperMarioBros.
-- **Original music and sounds from SuperMario**: All the background music and special effects of the original game are also from SuperMarioBros.
+- **3 different levels:** You can select a level created by us based in the diferent worlds of the original Super Mario.
+- **Original music and sounds from Super Mario**: All the background music and special effects of the game are also from Super Mario.
 
 ## Built With
 
-* [Unity](https://unity3d.com/) - Used to create the code. 
+* [Unity](https://unity3d.com/) - Used to create the whole game. 
 * [Mixamo](https://www.mixamo.com/) - Used to generate the diferent animations.
 
 ## Authors
