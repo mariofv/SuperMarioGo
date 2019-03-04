@@ -1,6 +1,6 @@
-# SuperMarioGO
+# Super Mario GO
 
-This videogame based on [LaraCroftGO](https://en.wikipedia.org/wiki/Lemmings_(video_game)) but with the Super Mario Theme. It was implemented using unity and 3D models during the Videogames subject of the Bachelor's Degree in Computer Science of the [Universitat Politècnica de Catalunya](https://www.upc.edu/ca) - [Facultat d'informàtica de Barcelona](https://www.fib.upc.edu/).
+This videogame based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Croft_Go) but with the Super Mario Theme. It was implemented using unity and 3D models during the Videogames subject of the Bachelor's Degree in Computer Science of the [Universitat Politècnica de Catalunya](https://www.upc.edu/ca) - [Facultat d'informàtica de Barcelona](https://www.fib.upc.edu/).
 
 
 ![](https://github.com/mariofv/SuperMarioGo/blob/master/Assets/level.PNG)
