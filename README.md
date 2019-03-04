@@ -3,7 +3,7 @@
 This videogame based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Croft_Go) but with the Super Mario Theme. It was implemented using unity and 3D models during the Videogames subject of the Bachelor's Degree in Computer Science of the [Universitat Politècnica de Catalunya](https://www.upc.edu/ca) - [Facultat d'informàtica de Barcelona](https://www.fib.upc.edu/).
 
 
-![](https://github.com/mariofv/SuperMarioGo/blob/master/Assets/level.PNG)
+![](https://github.com/mariofv/SuperMarioGo/blob/master/img/level.PNG)
 *Yeah! That's a screenshoot from level 2!*
 
 
