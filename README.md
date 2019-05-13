@@ -24,7 +24,7 @@ This videogame is based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Cr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/carlotacb/Lemmings/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mariofv/SuperMarioGo/blob/master/LICENSE) file for details.
 
 ## Acknowledgments
 
