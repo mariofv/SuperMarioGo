@@ -1,9 +1,9 @@
-# Super Mario GO ![MarioGif](https://github.com/mariofv/SuperMarioGo/blob/master/img/Mario.gif)
+# Super Mario GO ![MarioGif](https://github.com/mariofv/SuperMarioGo/blob/master/media/img/Mario.gif)
 
 This videogame is based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Croft_Go) with the Super Mario Theme. It was implemented using Unity during the Videogames subject of the Bachelor's Degree in Computer Science of the [Universitat Politècnica de Catalunya](https://www.upc.edu/ca) - [Facultat d'informàtica de Barcelona](https://www.fib.upc.edu/).
 
 
-![GameplayGif](https://github.com/mariofv/SuperMarioGo/blob/master/img/mario-gameplay.gif)
+![GameplayGif](https://github.com/mariofv/SuperMarioGo/blob/master/media/img/mario-gameplay.gif)
 *Yeah! That is gameplay from level 2!*
 
 
@@ -13,7 +13,7 @@ This videogame is based on [Lara Croft GO](https://en.wikipedia.org/wiki/Lara_Cr
 
 ## Built With
 
-* [Unity](https://unity3d.com/) - Used to create the whole game. 
+* [Unity](https://unity3d.com/) - Used to create the whole game.
 * [Mixamo](https://www.mixamo.com/) - Used to generate the diferent animations.
 
 ## Authors

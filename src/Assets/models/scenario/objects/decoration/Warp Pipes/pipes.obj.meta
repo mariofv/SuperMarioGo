@@ -1,33 +1,96 @@
 fileFormatVersion: 2
 guid: 95aef80da1384b84e949410a849f4bd0
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: TopN_
-    100004: TopN_2
-    100006: TopN_3
-    400000: //RootNode
-    400002: TopN_
-    400004: TopN_2
-    400006: TopN_3
-    2100000: 3
-    2100002: 4
-    2100004: 0
-    2100006: 1
-    2100008: 2
-    2100010: 5
-    2100012: 6
-    2300000: TopN_
-    2300002: TopN_2
-    2300004: TopN_3
-    3300000: TopN_
-    3300002: TopN_2
-    3300004: TopN_3
-    4300000: TopN_
-    4300002: TopN_2
-    4300004: TopN_3
-  externalObjects: {}
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: TopN_
+  - first:
+      1: 100004
+    second: TopN_2
+  - first:
+      1: 100006
+    second: TopN_3
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: TopN_
+  - first:
+      4: 400004
+    second: TopN_2
+  - first:
+      4: 400006
+    second: TopN_3
+  - first:
+      21: 2100000
+    second: 3
+  - first:
+      21: 2100002
+    second: 4
+  - first:
+      21: 2100004
+    second: 0
+  - first:
+      21: 2100006
+    second: 1
+  - first:
+      21: 2100008
+    second: 2
+  - first:
+      21: 2100010
+    second: 5
+  - first:
+      21: 2100012
+    second: 6
+  - first:
+      23: 2300000
+    second: TopN_
+  - first:
+      23: 2300002
+    second: TopN_2
+  - first:
+      23: 2300004
+    second: TopN_3
+  - first:
+      33: 3300000
+    second: TopN_
+  - first:
+      33: 3300002
+    second: TopN_2
+  - first:
+      33: 3300004
+    second: TopN_3
+  - first:
+      43: 4300000
+    second: TopN_
+  - first:
+      43: 4300002
+    second: TopN_2
+  - first:
+      43: 4300004
+    second: TopN_3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TopN_2Mat
+    second: {fileID: 2100000, guid: 8932a268da27e9d419003e9febfdd488, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TopN_3Mat
+    second: {fileID: 2100000, guid: 80521d868c5572045a773aac4b483f50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TopN_Mat
+    second: {fileID: 2100000, guid: 57abf261a51ee9146ad877022458b170, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -61,6 +124,8 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -68,10 +133,13 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -83,10 +151,14 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -96,8 +168,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
